@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAKKA MEET — Global Creator Suite</title>
+    <!-- Linking your external design sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🌌 PREMIUM CYBER-OBSIDIAN INITIALIZATION WELCOME LOGIN CARD -->
+    <div class="zakka-login-screen-overlay" id="zakkaWelcomeLoginScreen">
+        <div class="login-luxury-glass-card">
+            <div class="brand-logo-area">
+                <span class="brand-shutter-icon">🌐</span>
+                <h2 class="brand-title-text">ZAKKA<span style="color: #0078ff;">MEET</span></h2>
+                <p class="brand-subtitle-text">OMNIVERSE MULTI-SECTOR OS ENGINE</p>
+            </div>
+            
+            <!-- 🌐 HIGHLY SMART INTEL SYSTEM GREETING MESSAGE -->
+            <div style="background: rgba(0, 120, 255, 0.05); border: 1px solid rgba(0, 120, 255, 0.15); padding: 16px; border-radius: 12px; text-align: left; margin-bottom: 24px;">
+                <span style="font-size: 0.65rem; font-weight: 900; color: #38bdf8; display: block; letter-spacing: 1.5px; margin-bottom: 4px; text-transform: uppercase;">🔒 SECURE GATEWAY AUTHORIZATION</span>
+                <p style="font-size: 0.8rem; color: #e2e8f0; line-height: 1.5; font-weight: 500;">
+                    Welcome to the global workspace console. ZAKKA MEET has securely initialized your multi-sector communication tracks. Your cryptographic AES-GCM-256 media routing channels are fully primed and awaiting deployment.
+                </p>
+            </div>
+            
+            <div class="login-form-fields">
+                <label class="input-field-label">DEVELOPER IDENTITY OPERATOR NAME</label>
+                
+                
+                <label class="input-field-label">SELECT INITIAL ENTERPRISE ROLE NODE</label>
+                <select id="operatorRoleSelect">
+                    <option value="Host Operator">👑 Host Workspace Operator</option>
+                    <option value="Global Communicator">📢 Global Sector Communicator</option>
+                    <option value="Education Instructor">🎓 Educational Lead Instructor</option>
+                    <option value="Healthcare Administrator">🏥 Secure Telemedicine Officer</option>
+                </select>
+
+                <button class="initialize-workspace-launch-btn" id="btnLaunchZakkaMeet">🚀 Initialize Global Secure Session</button>
+            </div>
+
+            <footer class="login-card-signature-footer">
+                PLATFORM DEVELOPER PORTAL &copy; 2026 | DESIGN ARCHITECT: SALIM A. ZAKKA
+            </footer>
+        </div>
+    </div>
+
+    <!-- 🌐 MASTER WINDOW WRAPPER FOR ZAKKA MEET -->
+    <div class="zakka-zoom-container">
+        
+        <!-- 📟 TOP HUD HEADER ROW -->
+        <header class="zakka-top-hud">
+            <div class="hud-left">
+                <span class="live-rec-dot"></span>
+                <h1 class="room-title">ZAKKA MEET OS</h1>
+                <span class="developer-credit-badge">🚀 Builder: Salim Abdullahi Zakka</span>
+            </div>
+            <div class="hud-right">
+<button class="mobile-cam-switch-btn" id="btnToggleAppFullscreen" style="display: block; background: #0078ff; border: none; margin-right: 8px;">🖥️ Full Screen</button>
+                <button class="mobile-cam-switch-btn" id="mobileCamSwitchBtn">🔄 Switch Cam</button>
+                <span class="network-badge">Network: 5G</span>
+            </div>
+        </header>
+        <!-- 🚨 GLASSMORPHIC PERMISSION / HARDWARE CRITICAL ERROR OVERLAY -->
+        <div class="zakka-hardware-error-overlay" id="hardwareErrorOverlay">
+            <div class="error-glass-card">
+                <span class="error-card-icon">⚠️</span>
+                <h2>Hardware Stream Restricted</h2>
+                <p>ZAKKA MEET needs active camera and microphone tracks to establish your encrypted communication node pipeline.</p>
+                <div class="error-guide-steps">
+                    <div><span>1</span> Click the site lock icon in your browser address bar.</div>
+                    <div><span>2</span> Toggle Camera and Microphone permissions to <b>Allow</b>.</div>
+                    <div><span>3</span> Click the button below to re-initialize hardware.</div>
+                </div>
+                <button class="re-init-hardware-btn" onclick="setupLocalHardwareStreaming()">🔄 Re-Authorize Hardware</button>
+            </div>
+        </div>
+        <!-- 📡 SFU GATEWAY CONNECTION & INVITE TOKEN MANAGEMENT PANEL -->
+        <div class="zakka-sfu-connection-tray" style="padding: 12px 24px; background: rgba(9, 13, 22, 0.4); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.04); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; z-index: 9;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="control-action-btn active-control-toggle" id="btnGenerateToken" style="background: #0078ff; color: #fff; border: none; font-size: 0.75rem; padding: 6px 14px;">🔗 Generate Secure Invite Token</button>
+                <input type="text" id="generatedTokenOutput" readonly placeholder="Click to generate meeting link..." style="background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); padding: 6px 12px; border-radius: 6px; color: #38bdf8; font-family: monospace; font-size: 0.75rem; width: 220px; outline: none;">
+            </div>
+            
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <input type="text" id="guestInputToken" placeholder="Paste external token link here..." style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1); padding: 6px 12px; border-radius: 6px; color: #fff; font-size: 0.75rem; width: 200px; outline: none;">
+                <button class="control-action-btn" id="btnConnectSFU" style="background: #10b981; color: #000; font-weight: 700; border: none; font-size: 0.75rem; padding: 6px 14px;">⚡ Route via SFU Server</button>
+            </div>
+        </div>
+
+
+
+        <!-- 🎞:// CORE LAYOUT WORKSPACE CANVAS -->
+        <main class="zakka-video-workspace">
+            
+            <!-- 🛠️ CHAMELEON MATRIX VIDEO GRID ENGINE -->
+            <div class="responsive-video-matrix" id="videoMatrixGrid">
+                
+                <!-- REMOTE SLOT 1 -->
+                <div class="video-tile" id="gridParticipantA">
+                    <div class="user-avatar-placeholder">👤</div>
+                    <div class="tile-tag">Participant A (Remote View)</div>
+                </div>
+
+                <!-- REMOTE SLOT 2 -->
+                <div class="video-tile" id="gridParticipantB">
+                    <div class="user-avatar-placeholder">👥</div>
+                    <div class="tile-tag">Participant B (Remote View)</div>
+                </div>
+
+                <!-- REMOTE SLOT 3 -->
+                <div class="video-tile" id="gridParticipantC">
+                    <div class="user-avatar-placeholder">💻</div>
+                    <div class="tile-tag">Participant C (Remote View)</div>
+                </div>
+
+                <!-- HOST EXCLUSIVE SLOT (SELF-VIDEO CAMERA NODE TRACK) -->
+                <div class="video-tile host-grid-box" id="gridSelfVideoBox">
+                    <video id="meetingLocalVideoNode" autoplay playsinline muted></video>
+                    <div class="tile-tag host-tag">👑 Salim Abdullahi Zakka (Self-Video)</div>
+                    
+                    <!-- Real-Time Studio Filters overlay trigger block -->
+                    <div class="studio-filters-dropdown" id="zakkaStudioFxContainer">
+                        <select id="zakkaFilterSelect" class="studio-fx-dropdown-select">
+                            <option value="pristine">🎚️ FX: Pristine Studio</option>
+                            <option value="cyber">Cyber Obsidian Dark</option>
+                            <option value="blur">Corporate Blur</option>
+                            <option value="noir">Cinematic Noir</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 🎨 VECTOR WHITEBOARD CANVAS LAYOUT LAYER -->
+            <div class="zakka-whiteboard-canvas-layer" id="zakkaWhiteboardLayer">
+                <div class="whiteboard-top-controls">
+                    <span class="wb-indicator">🎨 Interactive Active Shared Vector Board</span>
+                    <button class="wb-clear-btn" id="clearWbBtn">🧹 Clear Canvas</button>
+                </div>
+                <!-- Drawing layer node -->
+                <canvas id="vectorDrawingCanvas"></canvas>
+            </div>
+        </main>
+
+        <!-- 📑 INTERACTION & COLLABORATION SIDE DRAWER (CHAT & FILES) -->
+        <aside class="zakka-side-drawer-panel" id="zakkaSideDrawer">
+            <div class="drawer-header">
+                <h2 class="drawer-title">📝 Room Discussion</h2>
+                <button class="drawer-close-btn" id="closeDrawerBtn">✕</button>
+            </div>
+            
+            <!-- Messages List Stream -->
+            <div class="drawer-messages-stream" id="chatMessageStreamBox">
+                <div class="system-broadcast-msg">
+                    <b>System Data Matrix:</b> In-call discussion board logs active.
+                </div>
+            </div>
+
+            <!-- File Sharing Drag and Drop Zone Area -->
+            <div class="file-sharing-drop-zone" id="fileSharingDropZone">
+                <span class="file-icon">📁</span>
+                <p>Drag files here or click to upload</p>
+                <input type="file" id="secureFileInputPort" style="display: none;">
+            </div>
+
+            <!-- Typing Input Container Area -->
+            <div class="drawer-typing-bar">
+                <input type="text" id="chatInputField" placeholder="Broadcast message packet...">
+                <button class="chat-send-btn" id="sendChatBtn">Send</button>
+            </div>
+        </aside>
+
+        <!-- 🎛️ FIXED BASE MEDIA NAVIGATION TOOLBAR -->
+        <footer class="zakka-fixed-bottom-bar">
+            <div class="controls-group-left">
+                <button class="control-action-btn" id="btnMic">🎙️ Mic</button>
+                <button class="control-action-btn" id="btnCam">📹 Cam</button>
+                <button class="control-action-btn" id="btnShare">📤 Share</button>
+                <button class="control-action-btn desktop-only" id="btnReact">🎭 React</button>
+                <button class="control-action-btn" id="btnChatToggle">💬 Chat</button>
+                <button class="control-action-btn" id="btnWhiteboardToggle">🎨 Whiteboard</button>
+                <button class="control-action-btn" id="btnMore">⚡ More</button>
+            </div>
+            <button class="leave-egress-btn" id="btnLeave">❌ LEAVE</button>
+        </footer>
+
+    </div>
+
+    <!-- Linking your action script file at the very bottom -->
+    <script src="app.js"></script>
+</body>
+</html>
